@@ -1,0 +1,41 @@
+<script>
+
+//VAR
+    // var é global e poderá funcionar fora de um escopo de bloco - e também é global
+    //hoisting - elevação de uma variável que é global. 
+
+console.log('> existe x antes do bloco? ', x)
+
+{
+    var x = 0
+}
+
+console.log('> existe x depois do bloco?', x)
+
+</script>
+
+
+<script>
+
+//LET
+    // const e let são locais e só funcionam no escopo onde foram criados
+let y = 1;
+    {
+        y = 0
+        console.log('> existe y ? ', y)        
+    }
+
+    console.log('> existe y depois do bloco? ', y)
+
+</script>
+
+<script>
+//CONST    
+    const z = 1
+        {
+            const z = 0
+            console.log('> existe y ', y)
+        }
+        // a menos que seja criado um escopo acima, a constante nunca deverá ser alterada!
+
+</script>

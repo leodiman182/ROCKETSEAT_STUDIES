@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste título</title>
+</head>
+<body>
+    <script src="./functions.js"><b>Funções</b></script>
+    <h1>
+        <script>
+        let text = (username) => {
+            if (isPremium(username)) {
+                return 'Você é premium'
+            } else {
+                return 'Você ainda não é premium!!'
+            }
+        }
+
+                   
+
+        function login(){
+            const username = document.getElementById('username').value
+            document.body.innerHTML=''
+            document.body.innerHTML+='<h1>' + welcome(username) + '</h1>'
+            document.body.innerHTML+='<p>' + text(username) + '</p>'
+            document.title=welcome(username)
+            document.body.innerHTML+='<button onclick="location.reload()">Back</button>'
+
+
+        }
+        </script>
+    </h1>
+
+    
+        <input id="username" type="text" name="Username" />
+        <button onclick="login()" id="login" type="submit"> Log In</button>
+    
+
+</body>
+</html>
