@@ -1,0 +1,90 @@
+<!--
+    Organização de dados!
+    -Visualização de dados/acessibilidade para leitura de dados
+
+    Não usar para criar Layouts!
+
+-->
+
+<table>
+    
+<caption>Pessoas por Idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Leonardo</td>
+            <td>26</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>Total</td>
+        <td>2 pessoas</td>
+    </tfoot>
+
+</table>
+
+
+
+<!-- Tabelas mais complexas-->
+
+
+<br><br><br><br><br>
+
+
+<!-- 
+    2 lojas
+        Quantos produtos foram produizados, quantos vendidos e agrupado por nome de produtos
+-->
+
+<table>
+
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+
+    <colgroup>
+        <col>
+        <col style="background-color: red;" span="2">
+        <col style="background-color: royalblue;" span="2">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Loja 1</th>
+            <th colspan="2" scope="colgroup">Loja 2</th>
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+
+</table>
